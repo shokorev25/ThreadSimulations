@@ -1,0 +1,12 @@
+[Unit]
+Description=Convert GNSS Data to RNX
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/box/ThreadSimulations/scripts/convert_to_rnx.py
+Restart=always
+User=box
+Group=box
+
+[Install]
+WantedBy=multi-user.target

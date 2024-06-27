@@ -1,0 +1,12 @@
+[Unit]
+Description=Download and Extract GNSS Data
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/box/ThreadSimulations/scripts/download_and_extract.py
+Restart=always
+User=box
+Group=box
+
+[Install]
+WantedBy=multi-user.target
