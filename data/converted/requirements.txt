@@ -1,0 +1,5 @@
+requests
+gnss-tec
+paho-mqtt
+fastapi
+uvicorn
