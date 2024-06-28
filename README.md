@@ -1,4 +1,4 @@
-#ThreadSimulations
+ThreadSimulations
 
 ## Project description
 
