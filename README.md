@@ -48,7 +48,6 @@ pip install -r requirements.txt
 1. **download_and_extract.service**
 2. **convert_to_rnx.service**
 3. **publish_data.service**
-4. **subscribe_data.service**
 
 Copy the service files to the `/etc/systemd/system/` directory and activate them:
 
@@ -58,11 +57,9 @@ sudo systemctl daemon-reload
 sudo systemctl enable download_and_extract.service
 sudo systemctl enable convert_to_rnx.service
 sudo systemctl enable publish_data.service
-sudo systemctl enable subscribe_data.service
 sudo systemctl start download_and_extract.service
 sudo systemctl start convert_to_rnx.service
 sudo systemctl start publish_data.service
-sudo systemctl start subscribe_data.service
 ```
 
 ## Launching the application
